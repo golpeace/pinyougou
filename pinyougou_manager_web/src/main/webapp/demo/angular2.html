@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+<script type="text/javascript">
+  function show(){
+// 	var v = document.getElementById("myInput").value; 
+// 	 document.getElementById("mySpan").innerHTML=v;
+	
+// 	$("#mySpan").html($("#myInput").val());
+
+
+  }
+
+</script>
+</head>
+<body ng-app>
+<!--    <input id="myInput" onkeyup="show()"> -->
+<!--    <br> -->
+<!--    您输入的是：<span id="mySpan"></span> -->
+   
+      <input ng-model="myContent">
+   <br>
+   您输入的是：{{myContent}}
+</body>
+</html>

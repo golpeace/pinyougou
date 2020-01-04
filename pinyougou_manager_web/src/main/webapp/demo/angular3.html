@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+<script type="text/javascript">
+
+//  M model数据   V：view 视图页面显示的内容   C：Controller 数据的控制层
+
+// $scope html和js中数据交互的入口
+  function myController($scope){
+	  $scope.user={username:'syl'};  
+  }
+  
+  
+</script>
+</head>
+<body ng-app="" ng-controller="myController">
+  {{user.username}}   
+
+</body>
+</html>

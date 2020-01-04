@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+<script type="text/javascript">
+  var app = angular.module("pinyougou",[]);//定义一个模块  模块名称是pinyougou
+  app.controller("myController",function($scope){
+	  
+	 $scope.showUser=function(){
+		 $scope.user={username:"BBBBBB"};
+	 }
+	  
+	  
+  })
+  
+</script>
+</head>
+<body ng-app="pinyougou" ng-controller="myController" ng-init="showUser()">
+    
+    {{user.username}}
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../plugins/angularjs/angular.min.js"></script>
+<script type="text/javascript">
+  var app = angular.module("pinyougou",[]);//定义一个模块  模块名称是pinyougou
+  app.controller("myController",function($scope,$http){
+	 
+	  $scope.user={name:"aaaa"};
+	  
+	  $scope.copy=function(){
+
+		  $scope.user2= JSON.parse(  JSON.stringify($scope.user));
+	  }
+	 
+	  
+	  
+  })
+  
+</script>
+</head>
+<body ng-app="pinyougou" ng-controller="myController" >
+    
+   第一个人的姓名是：{{user.name}}  <button ng-click="copy()">赋值</button>
+   第二个人的姓名是：<input  ng-model="user2.name"/>
+</body>
+</html>

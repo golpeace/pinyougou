@@ -1,0 +1,1 @@
+var app = angular.module("pinyougou",[]);//定义一个模块  模块名称是pinyougou
